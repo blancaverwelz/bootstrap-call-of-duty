@@ -1,0 +1,459 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.938);
+    color: seashell;
+    font-family: sans-serif;
+}
+
+.duty {
+    font-size: 3rem;
+    color: seashell;
+}
+.navbar {
+    background-color: transparent;
+    position: relative;
+    z-index: 4;
+    padding-left: 30px;
+    padding-right: 120px;
+}
+#home, #features, #mobile, #navbarDropdownMenuLink {
+    color: seashell;
+    font-size: 1.1rem;
+}
+
+.dropdown-menu {
+    background-color: rgb(35,35,35);
+    border: 1px solid rgb(35,35,35);
+}
+.dropdown-menu a{
+    color: seashell;
+}
+main {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 100vh;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 8%;
+}
+
+.site-wrapper {
+    height: 1000px;
+}
+
+.game {
+    padding-top: 0;
+}
+#game {
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+#first-content {
+    padding-left: 40px;
+}
+.card, .list-group-item {
+    background-color: rgb(35,35,35);
+}
+
+#second-content {
+    padding-top: 25px;
+    padding-left: 33px;
+}
+
+.card-title {
+    font-family: 'Staatliches'; 
+    font-size: 1.5rem; 
+    letter-spacing: 1.1px;
+}
+
+#new-season {
+    background-color: rgba(0, 0, 0, 0.500);
+}
+.parallax {
+    background-image: url('img/cod10.jpg');
+    background-attachment: fixed;
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.account {
+    text-transform: uppercase;
+    font-family: 'Staatliches'; 
+    font-size: 1.9rem; 
+    letter-spacing: 4px;
+}
+.btn-primary {
+    background-color: rgb(56, 53, 53);
+    border: 1px solid rgb(41, 39, 39);
+}
+.btn-primary:hover {
+    background-color: rgb(223, 216, 194);
+    border: 1px solid rgb(41, 39, 39);
+    color: rgb(35,35,35);
+}
+::placeholder {
+    font-size: .8rem;
+}
+
+#footer-nav, #footer-con {
+    padding-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+#legal, #terms, #privacy, #cookie, #support {
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+.text-muted {
+    color: rgb(35,35,35);
+    opacity: .50;
+    font-size: .7rem;
+}
+footer {
+    padding: 0;
+}
+
+
+@media only screen and (max-device-width:1646px){
+    .site-wrapper{
+        height: 975px;  
+    }
+} 
+@media only screen and (max-device-width:1601px){
+    .site-wrapper{
+        height: 950px;  
+    }
+} 
+@media only screen and (max-device-width:1556px){
+    .site-wrapper{
+        height: 920px;  
+    }
+}
+@media only screen and (max-device-width:1511px){
+    .site-wrapper{
+        height: 890px;  
+    }
+} 
+@media only screen and (max-device-width:1466px){
+    .site-wrapper{
+        height: 860px;  
+    }
+} 
+@media only screen and (max-device-width:1421px){
+    .site-wrapper{
+        height: 835px;  
+    }
+} 
+@media only screen and (max-device-width:1395px){
+    .site-wrapper{
+        height: 805px;  
+    }
+} 
+@media only screen and (max-device-width:1345px){
+    .site-wrapper{
+        height: 780px;  
+    }
+} 
+@media only screen and (max-device-width:1295px){
+    .site-wrapper{
+        height: 755px;  
+    }
+} 
+@media only screen and (max-device-width:1245px){
+    .site-wrapper{
+        height: 725px;  
+    }
+} 
+@media only screen and (max-device-width:1195px){
+    .site-wrapper{
+        height: 695px;  
+    }
+} 
+@media only screen and (max-device-width:1145px){
+    .site-wrapper{
+        height: 665px;  
+    }
+} 
+@media only screen and (max-device-width:1095px){
+    .site-wrapper{
+        height: 635px;  
+    }
+} 
+
+@media only screen and (max-device-width:1024px){
+    .navbar {
+        padding-right: 50px;
+    }
+    .dropdown-menu {
+        font-size: .9rem;
+    }
+    
+    .dropdown{
+        margin-right: 1px;
+    }
+
+    .dropdown-menu { 
+        min-width: 60px 
+    }
+    .site-wrapper{
+        height: 600px;  
+    }
+    .carousel-control-prev, .carousel-control-next {
+       height: 50%;
+    }
+    #game {
+        font-size: 2rem;
+    }
+    #first-content, #second-content {
+        padding-left: 1px;
+    }
+    .parallax {
+        background-size: 100%;
+        background-position: 50% 70%;
+    }
+}
+
+@media only screen and (max-device-width:991px){
+    .navbar-light .navbar-toggler {
+        background-color: rgba(255, 255, 255, 0.192);
+      }
+    .navbar-toggler {
+        position: absolute;
+        top: 100px;
+        background-color: rgba(255, 245, 238, 0.100);
+    }
+    #home {
+        padding-top: 70px;
+    }
+    .dropdown-menu { 
+        width: 130px;
+        min-width: 60px 
+    }
+    .dropdown-item{ 
+        min-width: 60px 
+    }
+    .site-wrapper{
+        height: 580px;  
+    }
+    .carousel-control-prev, .carousel-control-next {
+        height: 80%;
+    }
+    #first-left, #first-center, #first-right, #second-left, #second-right {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+    .parallax {
+        background-size: 100%;
+        background-position: 50% 5%;
+        height: 450px;
+    }
+    #footer-nav {
+        text-align: center;
+    }
+}
+@media only screen and (max-device-width:946px){
+    .site-wrapper{
+        height: 550px;  
+    }
+}
+@media only screen and (max-device-width:901px){
+    .site-wrapper{
+        height: 520px;  
+    }
+}
+@media only screen and (max-device-width:856px){
+    .site-wrapper{
+        height: 490px;  
+    }
+}
+@media only screen and (max-device-width:811px){
+    .site-wrapper{
+        height: 485px;  
+    }
+}
+@media only screen and (max-device-width:768px){
+    .duty {
+        font-size: 2.5rem;
+    }
+    #home {
+        padding-top: 80px;
+    }
+    #home, #features, #mobile, #navbarDropdownMenuLink {
+        font-size: 1rem;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+       height: 50%;
+    }
+
+    .site-wrapper{
+        height: 460px;  
+    }
+    
+    .parallax {
+        background-size: 100%;
+        background-position: 50% 35%;
+        height: 390px;
+    }
+}
+
+@media only screen and (max-device-width:723px){
+    .site-wrapper{
+        height: 425px;  
+    }
+}
+@media only screen and (max-device-width:678px){
+    .site-wrapper{
+        height: 400px;  
+    }
+}
+@media only screen and (max-device-width:633px){
+    .site-wrapper{
+        height: 375px;  
+    }
+}
+@media only screen and (max-device-width:588px){
+    .site-wrapper{
+        height: 350px;  
+    }
+}
+@media only screen and (max-device-width:543px){
+    .site-wrapper{
+        height: 325px;  
+    }
+}
+@media only screen and (max-device-width:498px){
+    .site-wrapper{
+        height: 300px;  
+    }
+}
+@media only screen and (max-device-width:453px){
+    .site-wrapper{
+        height: 275px;  
+    }
+}
+
+@media only screen and (max-device-width:414px){
+    .duty {
+        font-size: 2rem;
+    }
+    .navbar-toggler {
+        top: 65px;
+    }
+    #home {
+        padding-top: 60px;
+    }
+    #home, #features, #mobile, #navbarDropdownMenuLink {
+        font-size: .9rem;
+    }
+    .site-wrapper{
+        height: 250px;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+
+    #game {
+        font-size: 1.5rem;
+    }
+    .account {
+        font-size: 1.8rem;
+    }
+    #legal, #terms, #privacy, #cookie, #support {
+        font-size: .7rem;
+    }
+    .parallax {
+        background-position: 50% 20%;
+        height: 220px;
+    }
+    .text-muted {
+        font-size: .6rem;
+    }
+}    
+
+@media only screen and (max-device-width:375px){
+    .duty {
+        font-size: 1.8rem;
+    }
+    .site-wrapper{
+        height: 230px;
+    }
+
+    .navbar, .navbar-toggler-icon  {
+        padding-top: 10px;
+        padding-right: 8px;
+    }
+    .dropdown-menu, #navbarNavDropdown {
+        margin-right: 15px;
+    }
+
+    #game {
+        font-size: 1.2rem;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+    #first-content, #second-content {
+        padding-left: 1px;
+    }
+
+    .parallax {
+        background-position: 50% 25%;
+        height: 190px;
+    }
+
+    #legal, #terms, #privacy, #cookie, #support {
+        font-size: .7rem;
+    }
+}    
+@media only screen and (max-device-width:320px){
+    .duty {
+        margin-left: 3px;
+    }
+    .site-wrapper{
+        height: 200px;
+    }
+    .navbar, .navbar-toggler-icon  {
+        padding-top: 0px;
+        padding-left: 18px;
+    }
+    .dropdown-menu, #navbarNavDropdown {
+        
+        margin-right: 15px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+    
+    #first-content, #second-content {
+        padding-left: 1px;
+    }
+    .account {
+        font-size: 1.5rem;
+    }
+
+    .parallax {
+        background-position: 50% -10%;
+        height: 200px;
+    }
+    #legal, #terms, #privacy, #cookie, #support {
+        font-size: .7rem;
+    } 
+}    

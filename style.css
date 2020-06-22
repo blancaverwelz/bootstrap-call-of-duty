@@ -163,6 +163,11 @@ footer {
         height: 805px;  
     }
 } 
+@media only screen and (max-device-width:1366px){
+    .parallax {
+        background-position: 80% 50%;
+    }
+} 
 @media only screen and (max-device-width:1345px){
     .site-wrapper{
         height: 780px;  
@@ -222,8 +227,11 @@ footer {
         padding-left: 1px;
     }
     .parallax {
+        position: static;
         background-size: 100%;
-        background-position: 50% 70%;
+        background-attachment: local;
+        background-repeat: no-repeat;
+        max-height: 300px;
     }
 }
 
@@ -263,13 +271,11 @@ footer {
         justify-content: center;
         margin-bottom: 35px;
     }
-    .parallax {
-        background-size: 100%;
-        background-position: 50% 5%;
-        height: 450px;
-    }
     #footer-nav {
         text-align: center;
+    }
+    #footer-navlinks  {
+        background-color: rgba(35, 35, 35, 0);
     }
 }
 @media only screen and (max-device-width:946px){
@@ -288,7 +294,7 @@ footer {
     }
 }
 @media only screen and (max-device-width:811px){
-    .site-wrapper{
+    .site-wrapper {
         height: 485px;  
     }
 }
@@ -307,12 +313,6 @@ footer {
 
     .site-wrapper{
         height: 460px;  
-    }
-    
-    .parallax {
-        background-size: 100%;
-        background-position: 50% 35%;
-        height: 390px;
     }
 }
 
@@ -340,6 +340,9 @@ footer {
     .site-wrapper{
         height: 325px;  
     }
+    .parallax {
+        max-height: 250px;
+    }
 }
 @media only screen and (max-device-width:498px){
     .site-wrapper{
@@ -349,6 +352,9 @@ footer {
 @media only screen and (max-device-width:453px){
     .site-wrapper{
         height: 275px;  
+    }
+    .parallax {
+        max-height: 200px;
     }
 }
 
@@ -375,10 +381,6 @@ footer {
     }
     #legal, #terms, #privacy, #cookie, #support {
         font-size: .7rem;
-    }
-    .parallax {
-        background-position: 50% 20%;
-        height: 220px;
     }
     .text-muted {
         font-size: .6rem;
@@ -412,11 +414,6 @@ footer {
         padding-left: 1px;
     }
 
-    .parallax {
-        background-position: 50% 25%;
-        height: 190px;
-    }
-
     #legal, #terms, #privacy, #cookie, #support {
         font-size: .7rem;
     }
@@ -443,13 +440,12 @@ footer {
     #first-content, #second-content {
         padding-left: 1px;
     }
-    .account {
-        font-size: 1.5rem;
-    }
 
     .parallax {
-        background-position: 50% -10%;
-        height: 200px;
+        max-height: 180px;
+    }
+    .account {
+        font-size: 1.5rem;
     }
     #legal, #terms, #privacy, #cookie, #support {
         font-size: .7rem;

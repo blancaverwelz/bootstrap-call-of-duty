@@ -15,7 +15,7 @@ body {
     position: relative;
     z-index: 4;
     padding-left: 30px;
-    padding-right: 120px;
+    padding-right: 30px;
 }
 #home, #features, #mobile, #navbarDropdownMenuLink {
     color: seashell;
@@ -23,7 +23,10 @@ body {
 }
 
 .dropdown-menu {
-    background-color: rgba(35, 35, 35, 0);
+    position: absolute;
+    top: 40px;
+    left: -75px;
+    background-color: rgba(35, 35, 35, 0.700);
     border:none;
 }
 .dropdown-menu a{
@@ -173,7 +176,8 @@ footer {
         height: 780px;  
     }
 } 
-@media screen and (max-width:1295px){  .site-wrapper{
+@media screen and (max-width:1295px){  
+    .site-wrapper{
         height: 755px;  
     }
 } 
@@ -199,19 +203,11 @@ footer {
 } 
 
 @media screen and (max-width:1024px){
-    .navbar {
-        padding-right: 50px;
-    }
     .dropdown-menu {
         font-size: .9rem;
     }
-    
     .dropdown{
         margin-right: 1px;
-    }
-
-    .dropdown-menu { 
-        min-width: 60px 
     }
     .site-wrapper{
         height: 600px;  
@@ -245,16 +241,18 @@ footer {
         font-size: 1.2rem;
     }
     .navbar ul {
-        width: 150px;
-        float: right;
+        width: 100%;
+        text-align: center;
         padding-left: 20px;
         background-color: rgba(35, 35, 35, .900);
         border-radius: 5px;
     }
     
     .dropdown-menu { 
-        width: 130px;
-        min-width: 60px 
+        background-color: rgba(35, 35, 35, 0);
+        width: 100%;
+        min-width: 60px;
+        text-align: center; 
     }
     .dropdown-item{ 
         min-width: 60px 
@@ -403,16 +401,10 @@ footer {
         height: 230px;
     }
 
-    .navbar ul {
-        width: 135px;
-    }
     .dropdown-menu, #navbarNavDropdown {
         margin-right: 5px;
     }
-    .dropdown-divider {
-        width: 110px;
-    }
-
+    
     #game {
         font-size: 1.2rem;
     }

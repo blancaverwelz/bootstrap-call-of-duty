@@ -23,8 +23,8 @@ body {
 }
 
 .dropdown-menu {
-    background-color: rgb(35,35,35);
-    border: 1px solid rgb(35,35,35);
+    background-color: rgba(35, 35, 35, 0);
+    border:none;
 }
 .dropdown-menu a{
     color: seashell;
@@ -242,12 +242,12 @@ footer {
         position: relative;
         display: inline-block;
         background-color: rgba(34, 34, 34, 0.534);
-
+        font-size: 1.2rem;
     }
     .navbar ul {
         width: 150px;
         float: right;
-        padding-left: 10px;
+        padding-left: 20px;
         background-color: rgba(35, 35, 35, .900);
         border-radius: 5px;
     }
@@ -358,8 +358,17 @@ footer {
 }
 
 @media screen and (max-width:414px){
+    .navbar {
+        padding: 15px;
+    }
+    .navbar-toggler {
+        font-size: .8rem;
+        padding: 5px 10px;
+    }
+    
     .duty {
         font-size: 2rem;
+
     }
     #home, #features, #mobile, #navbarDropdownMenuLink {
         font-size: .9rem;
@@ -394,12 +403,14 @@ footer {
         height: 230px;
     }
 
-    .navbar, .navbar-toggler-icon  {
-        padding-top: 10px;
-        padding-right: 8px;
+    .navbar ul {
+        width: 135px;
     }
     .dropdown-menu, #navbarNavDropdown {
-        margin-right: 15px;
+        margin-right: 5px;
+    }
+    .dropdown-divider {
+        width: 110px;
     }
 
     #game {
@@ -424,12 +435,8 @@ footer {
     .site-wrapper{
         height: 200px;
     }
-    .navbar, .navbar-toggler-icon  {
-        padding-top: 0px;
-        padding-left: 18px;
-    }
+    
     .dropdown-menu, #navbarNavDropdown {
-        
         margin-right: 15px;
     }
     .carousel-control-prev, .carousel-control-next {
